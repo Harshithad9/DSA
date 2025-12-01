@@ -13,3 +13,6 @@ print(is_palindrome(arr))
 
 --------------------------OR--------------------------------
 
+num = list(map(int, input("Enter the number: ").split()))
+result = num == num[::-1]
+print(result)
