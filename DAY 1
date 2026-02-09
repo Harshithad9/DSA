@@ -1,18 +1,16 @@
 Python Basics & Input/Output
 
-
-
-What is Programming?
+>> What is Programming?
 
 Programming is giving step-by-step instructions to a computer to perform tasks.
 
 Python is:
 
-Easy to read
+>>Easy to read
 
-Beginner-friendly
+>>Beginner-friendly
 
-Widely used in DSA & interviews
+>>Widely used in DSA & interviews
 
 🔹 First Python Program
 print("Hello, World!")
