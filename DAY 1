@@ -1,0 +1,69 @@
+Python Basics & Input/Output
+
+
+
+What is Programming?
+
+Programming is giving step-by-step instructions to a computer to perform tasks.
+
+Python is:
+
+Easy to read
+
+Beginner-friendly
+
+Widely used in DSA & interviews
+
+🔹 First Python Program
+print("Hello, World!")
+
+
+print() is used to display output
+
+Text inside quotes is a string
+
+🔹 Variables
+
+Variables store data.
+
+age = 20
+name = "Harshitha"
+
+
+age → integer
+
+name → string
+
+🔹 Data Types
+Data Type	Example
+int	10
+float	3.14
+str	"Hello"
+bool	True / False
+
+Check type:
+
+x = 10
+print(type(x))
+
+🔹 Taking Input
+name = input("Enter name: ")
+
+
+⚠️ input() always returns a string
+
+Convert to integer:
+
+age = int(input("Enter age: "))
+
+🔹 Arithmetic Operators
+Operator	Meaning
++	Addition
+-	Subtraction
+*	Multiplication
+/	Division
+%	Modulus
+🔹 Example Program: Sum of Two Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum:", a + b)
