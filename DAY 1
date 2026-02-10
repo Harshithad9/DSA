@@ -1,1 +1,41 @@
+# 📘 DSA with Python – Day 1 
+
+This document covers the fundamentals of Python required before starting core Data Structures and Algorithms (DSA).
+
+---
+
+# 🟢 Day 1 – Python Basics & Input/Output
+
+## 🎯 Objective
+- Understand what programming is
+- Learn Python syntax
+- Use variables and data types
+- Take input and display output
+
+---
+
+## 🔹 What is Programming?
+Programming is the process of giving step-by-step instructions to a computer to perform a task.
+
+Python is:
+- Easy to read
+- Beginner-friendly
+- Widely used in DSA and interviews
+
+---
+
+## 🔹 First Python Program
+
+```python
+print("Hello, World!")
+
+print() is used to display output
+Text inside quotes is a string
+
+Variables
+
+Variables store data values.
+
+age = 20
+name = "Harshitha"
    
