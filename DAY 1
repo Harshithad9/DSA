@@ -62,8 +62,19 @@ name = input("Enter your name: ")
 
 ⚠️ input() always returns a string.
 
-Convert input to integer:
+
+
+## 🔹 Convert input to integer:
 
 age = int(input("Enter your age: "))
+
+| Operator | Meaning        |
+| -------- | -------------- |
+| +        | Addition       |
+| -        | Subtraction    |
+| *        | Multiplication |
+| /        | Division       |
+| %        | Modulus        |
+
 
    
