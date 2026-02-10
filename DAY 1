@@ -38,4 +38,32 @@ Variables store data values.
 
 age = 20
 name = "Harshitha"
+
+
+
+## 🔹 Data Types
+| Data Type | Example      |
+| --------- | ------------ |
+| int       | 10           |
+| float     | 3.14         |
+| str       | "Hello"      |
+| bool      | True / False |
+
+
+
+## 🔹 Check data type:
+
+x = 10
+print(type(x))
+
+🔹 Taking Input from User
+name = input("Enter your name: ")
+
+
+⚠️ input() always returns a string.
+
+Convert input to integer:
+
+age = int(input("Enter your age: "))
+
    
