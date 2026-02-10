@@ -1,0 +1,26 @@
+# 🟢 Day 4 – Functions in Python (DSA Foundations)
+
+## 🎯 Objective
+- Understand what functions are
+- Learn how to define and call functions
+- Use parameters and return values
+- Understand why functions are important for DSA
+
+---
+
+## 🔹 What is a Function?
+A function is a block of reusable code that performs a specific task.
+
+Functions help to:
+- Avoid code repetition
+- Organize logic
+- Improve readability
+- Solve DSA problems efficiently
+
+---
+
+## 🔹 Function Syntax
+
+```python
+def function_name():
+    # code
