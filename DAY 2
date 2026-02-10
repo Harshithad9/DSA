@@ -1,0 +1,74 @@
+Day 2 – Conditional Statements & Logic Building
+🎯 Objective
+
+Understand decision making
+
+Use if, elif, else
+
+Build logical thinking
+
+🔹 Why Conditions?
+
+Conditions allow a program to take decisions based on input.
+
+Example:
+
+IF age ≥ 18 → Can vote
+
+ELSE → Cannot vote
+
+🔹 if Statement
+if condition:
+    code
+
+
+Example:
+
+age = 20
+if age >= 18:
+    print("Eligible to vote")
+
+🔹 Comparison Operators
+Operator	Meaning
+==	Equal
+!=	Not equal
+>	Greater than
+<	Less than
+>=	Greater or equal
+<=	Less or equal
+
+⚠️ = is assignment
+⚠️ == is comparison
+
+🔹 if–else Statement
+num = int(input("Enter number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+🔹 if–elif–else (Multiple Conditions)
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+else:
+    print("Fail")
+
+🔹 Logical Operators
+Operator	Meaning
+and	Both conditions true
+or	At least one true
+not	Reverse condition
+🔹 Example: Largest of Three Numbers
+if a > b and a > c:
+    print(a)
+elif b > c:
+    print(b)
+else:
+    print(c)
