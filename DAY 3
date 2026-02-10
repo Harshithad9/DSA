@@ -1,0 +1,70 @@
+Loops (for & while)
+🎯 Objective
+
+Understand repetition
+
+Learn for and while loops
+
+Solve classic looping problems
+
+🔹 Why Loops?
+
+Loops help execute a block of code multiple times without repetition.
+
+🔹 for Loop
+for i in range(start, end):
+    code
+
+
+Example:
+
+for i in range(1, 6):
+    print(i)
+
+
+👉 Prints numbers from 1 to 5
+
+🔹 range() Function
+range(5)        # 0 to 4
+range(1, 5)     # 1 to 4
+range(1, 10, 2) # 1,3,5,7,9
+
+🔹 while Loop
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+
+⚠️ Condition must change to avoid infinite loop.
+
+🔹 for vs while
+for loop	while loop
+Fixed iterations	Condition-based
+Cleaner syntax	Flexible
+Mostly used in DSA	Used when iterations unknown
+🔹 Example: Sum of First N Numbers
+n = int(input("Enter n: "))
+total = 0
+
+for i in range(1, n + 1):
+    total += i
+
+print("Sum:", total)
+
+🔹 Factorial of a Number
+n = int(input("Enter number: "))
+fact = 1
+
+for i in range(1, n + 1):
+    fact *= i
+
+print("Factorial:", fact)
+
+🔹 Nested Loops
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+
+
+🧠 Nested loops often lead to O(n²) time complexity.
