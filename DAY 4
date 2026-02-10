@@ -24,3 +24,5 @@ Functions help to:
 ```python
 def function_name():
     # code
+
+
