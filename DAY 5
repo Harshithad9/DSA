@@ -19,3 +19,17 @@ Example:
 ```python
 arr = [10, 20, 30, 40]
 
+Each element has an index:
+
+Index:  0   1   2   3
+Value: 10  20  30  40
+
+
+Access element:
+
+print(arr[0])  # Output: 10
+
+🔹 Creating Lists
+arr = [1, 2, 3]
+numbers = []
+mixed = [1, "hello", True]
