@@ -64,6 +64,7 @@ Output:
 Append (Add element at end)
 arr.append(50)
 
+
 Insert at specific position
 arr.insert(1, 99)
 
