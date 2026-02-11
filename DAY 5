@@ -33,3 +33,41 @@ print(arr[0])  # Output: 10
 arr = [1, 2, 3]
 numbers = []
 mixed = [1, "hello", True]
+
+Traversing a List
+Method 1: Using Index (Important for DSA)
+for i in range(len(arr)):
+    print(arr[i])
+
+Method 2: Direct Traversal
+for element in arr:
+    print(element)
+
+
+Index-based traversal is more powerful in DSA problems.
+
+🔹 Taking List Input from User
+arr = list(map(int, input("Enter numbers: ").split()))
+
+
+Example Input:
+
+1 2 3 4 5
+
+
+Output:
+
+[1, 2, 3, 4, 5]
+
+🔹 Basic List Operations
+Append (Add element at end)
+arr.append(50)
+
+Insert at specific position
+arr.insert(1, 99)
+
+Remove element by value
+arr.remove(20)
+
+Delete element by index
+del arr[2]
