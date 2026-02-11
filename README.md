@@ -63,6 +63,18 @@ The goal of this repository is to:
 
 ---
 
+### 🟢 Day 5 – Lists (Arrays in Python)
+- Introduction to arrays
+- Python lists
+- Traversing arrays
+- List operations (append, insert, delete)
+- Finding maximum & minimum
+- Two pointer technique
+- Second largest element
+- Checking if array is sorted
+
+---
+
 ## 🎯 Goals
 - Master DSA fundamentals
 - Improve problem-solving skills
