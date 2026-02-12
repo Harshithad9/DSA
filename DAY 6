@@ -1,1 +1,115 @@
+# 🟢 Day 6 – Strings in Python
 
+## 🎯 Objective
+- Understand what strings are
+- Learn string traversal
+- Perform string operations
+- Solve beginner string problems
+- Understand immutability concept
+
+---
+
+# 🔹 What is a String?
+
+A string is a sequence of characters.
+
+Example:
+```python
+s = "python"
+Each character has an index:
+
+Index:  0  1  2  3  4  5
+Value:  p  y  t  h  o  n
+
+
+Accessing characters:
+
+print(s[0])  # p
+
+🔹 Strings are Immutable
+
+Strings cannot be modified directly.
+
+❌ Not allowed:
+
+s[0] = 'P'
+
+
+This gives:
+
+TypeError: 'str' object does not support item assignment
+
+🔹 How to Modify a String (Correct Way)
+
+Since strings are immutable, we create a new string.
+
+Example:
+
+s = "hello"
+s = "H" + s[1:]
+print(s)   # Hello
+
+
+Explanation:
+
+s[1:] → "ello"
+
+"H" + "ello" → "Hello"
+
+🔹 General Pattern to Replace Character at Index i
+s = s[:i] + new_char + s[i+1:]
+
+
+Example:
+
+s = "abcdef"
+s = s[:3] + "X" + s[4:]
+print(s)  # abcXef
+
+🔹 String Traversal
+Method 1 – Index Based
+for i in range(len(s)):
+    print(s[i])
+
+Method 2 – Direct Traversal
+for ch in s:
+    print(ch)
+
+🔹 String Slicing
+
+Syntax:
+
+s[start:end:step]
+
+
+Important rules:
+
+Includes start
+
+Excludes end
+
+Examples:
+
+s = "abcdef"
+
+s[:3]     # abc
+s[2:5]    # cde
+s[1:]     # bcdef
+s[::-1]   # fedcba (reverse)
+
+🔹 Important String Methods
+Convert Case
+s.upper()
+s.lower()
+
+Replace Word
+s.replace("python", "JAVA")
+
+
+Replace only first occurrence:
+
+s.replace("python", "JAVA", 1)
+
+Split and Join
+words = s.split()
+" ".join(words)
