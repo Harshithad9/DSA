@@ -53,16 +53,6 @@ The goal of this repository is to:
 
 ---
 
-## 🚀 Topics Covered (Practice Problems)
-- Finding maximum element
-- Finding minimum element
-- Min & max in an array
-- Palindrome checking
-- Removing duplicates
-- Reverse array
-
----
-
 ### 🟢 Day 5 – Lists (Arrays in Python)
 - Introduction to arrays
 - Python lists
@@ -72,6 +62,20 @@ The goal of this repository is to:
 - Two pointer technique
 - Second largest element
 - Checking if array is sorted
+
+---
+
+### 🟢 Day 6 – Strings
+- Introduction to strings
+- String indexing & slicing
+- String traversal methods
+- String immutability concept
+- Replacing characters using slicing
+- String methods (upper, lower, replace, split, join)
+- Palindrome check
+- Vowel counting
+- Character frequency using dictionary
+- Reversing words in a sentence
 
 ---
 
