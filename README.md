@@ -22,9 +22,6 @@ The goal of this repository is to:
 
 ---
 
-
----
-
 ## 📅 Day-wise Progress
 
 ### 🟢 Day 1 – Python Basics
@@ -93,9 +90,6 @@ The goal of this repository is to:
 - Git & GitHub
 
 ---
-
-
-
 
 ## 📌 Note
 This repository is actively updated as I progress through my DSA learning roadmap.
