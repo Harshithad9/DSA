@@ -49,22 +49,25 @@ for i in range(n):
 
 - Time Complexity: O(n)
 
-Example 2
+### Example 2
+```python
 for i in range(n):
     for j in range(n):
         print(i, j)
 
 
-Time Complexity: O(n²)
+- Time Complexity: O(n²)
 
-Example 3
+### Example 3
+```python
 for i in range(n):
     for j in range(100):
         print(i, j)
 
 
-Time Complexity: O(n)
-(100 is constant → ignored)
+- Time Complexity: O(n)
+- (100 is constant → ignored)
+
 
 Example 4 (Dependent Loops)
 for i in range(n):
