@@ -1,0 +1,103 @@
+# 🟢 Day 7 – Time & Space Complexity
+
+## 🎯 Objective
+- Understand Time Complexity
+- Understand Space Complexity
+- Learn Big-O notation
+- Analyze loop-based problems
+- Think like an interviewer
+
+---
+
+# 🔹 What is Time Complexity?
+
+Time Complexity measures how the running time of an algorithm grows as input size increases.
+
+We measure growth pattern, not actual seconds.
+
+---
+
+## 🔹 Common Time Complexities
+
+| Complexity | Meaning | Example |
+|------------|----------|----------|
+| O(1) | Constant | Access arr[0] |
+| O(n) | Linear | Single loop |
+| O(n²) | Quadratic | Nested loops |
+| O(log n) | Logarithmic | Binary Search |
+| O(n³) | Cubic | Triple dependent loops |
+
+---
+
+## 🔹 Important Big-O Rules
+
+- Ignore constants  
+  - O(5n) → O(n)
+- Ignore smaller terms  
+  - O(n² + n) → O(n²)
+- Multiply nested loops
+- Add separate loops
+
+---
+
+## 🔹 Examples
+
+### Example 1
+```python
+for i in range(n):
+    print(i)
+
+- Time Complexity: O(n)
+
+Example 2
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+
+
+Time Complexity: O(n²)
+
+Example 3
+for i in range(n):
+    for j in range(100):
+        print(i, j)
+
+
+Time Complexity: O(n)
+(100 is constant → ignored)
+
+Example 4 (Dependent Loops)
+for i in range(n):
+    for j in range(i):
+        print(i, j)
+
+
+Time Complexity: O(n²)
+
+Example 5 (Triple Dependent Loops)
+for i in range(n):
+    for j in range(i):
+        for k in range(j):
+            print(i, j, k)
+
+
+Time Complexity: O(n³)
+
+🔹 What is Space Complexity?
+
+Space Complexity measures extra memory used by the algorithm.
+
+Example:
+
+a = 10
+b = 20
+
+
+Space Complexity: O(1)
+
+Example:
+
+arr = [1,2,3,4]
+
+
+Space Complexity: O(n)
