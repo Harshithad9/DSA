@@ -4,8 +4,7 @@
 - Understand Time Complexity
 - Understand Space Complexity
 - Learn Big-O notation
-- Analyze loop-based problems
-- Think like an interviewer
+- Analyze loops properly
 
 ---
 
@@ -17,93 +16,113 @@ We measure growth pattern, not actual seconds.
 
 ---
 
-## 🔹 Common Time Complexities
+# 🔹 Common Time Complexities
 
 | Complexity | Meaning | Example |
 |------------|----------|----------|
 | O(1) | Constant | Access arr[0] |
 | O(n) | Linear | Single loop |
 | O(n²) | Quadratic | Nested loops |
+| O(n³) | Cubic | Triple nested loops |
 | O(log n) | Logarithmic | Binary Search |
-| O(n³) | Cubic | Triple dependent loops |
 
 ---
 
-## 🔹 Important Big-O Rules
+# 🔹 Big-O Rules
 
 - Ignore constants  
-  - O(5n) → O(n)
+  O(5n) → O(n)
+
 - Ignore smaller terms  
-  - O(n² + n) → O(n²)
+  O(n² + n) → O(n²)
+
 - Multiply nested loops
+
 - Add separate loops
 
 ---
 
-## 🔹 Examples
+# 🔹 Examples
 
-### Example 1
+## Example 1
 ```python
 for i in range(n):
     print(i)
+```
+Time Complexity: O(n)
 
-- Time Complexity: O(n)
+---
 
-### Example 2
+## Example 2
 ```python
 for i in range(n):
     for j in range(n):
         print(i, j)
+```
+Time Complexity: O(n²)
 
+---
 
-- Time Complexity: O(n²)
-
-### Example 3
+## Example 3
 ```python
 for i in range(n):
     for j in range(100):
         print(i, j)
+```
+Time Complexity: O(n)
 
+(100 is constant, ignored)
 
-- Time Complexity: O(n)
-- (100 is constant → ignored)
+---
 
-
-### Example 4 (Dependent Loops)
+## Example 4
 ```python
 for i in range(n):
     for j in range(i):
         print(i, j)
+```
+Time Complexity: O(n²)
 
+---
 
-- Time Complexity: O(n²)
-
-### Example 5 (Triple Dependent Loops)
+## Example 5
 ```python
 for i in range(n):
     for j in range(i):
         for k in range(j):
             print(i, j, k)
+```
+Time Complexity: O(n³)
 
-
-- Time Complexity: O(n³)
-
+---
 
 # 🔹 What is Space Complexity?
 
-Space Complexity measures extra memory used by the algorithm.
+Space Complexity measures extra memory used.
 
 Example:
-
+```python
 a = 10
 b = 20
-
-
+```
 Space Complexity: O(1)
 
 Example:
-
+```python
 arr = [1,2,3,4]
-
-
+```
 Space Complexity: O(n)
+
+---
+
+# 🔥 Key Takeaways
+
+- Analyze how many times loops run
+- Multiply dependent nested loops
+- Ignore constants
+- Focus on dominant term
+- Think in growth patterns
+
+---
+
+# 🚀 End of Day 7
