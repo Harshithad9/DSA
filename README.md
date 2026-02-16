@@ -76,6 +76,45 @@ The goal of this repository is to:
 
 ---
 
+---
+
+### 🟢 Day 7 – Time & Space Complexity
+- Introduction to Time Complexity
+- Big-O notation
+- Understanding growth rate
+- Analyzing single and nested loops
+- Dependent vs independent loops
+- Ignoring constants and lower-order terms
+- Space Complexity basics
+- Interview-style complexity analysis
+
+---
+
+### 🟢 Day 8 – Array Patterns
+- Two Pointer Technique
+- Reverse array using two pointers
+- Two Sum (sorted array approach)
+- Prefix Sum concept
+- Range sum queries using prefix array
+- Sliding Window (fixed size)
+- Maximum sum subarray of size k
+- When to use which pattern
+
+---
+
+### 🔜 Upcoming Topics
+- Day 9 – Searching & Binary Search
+- Day 10 – Binary Search Applications
+- Recursion (Core Concept)
+- Backtracking Basics
+- Linked List
+- Stack & Queue
+- Trees & Binary Search Trees
+- Graphs
+- Dynamic Programming
+
+---
+
 ## 🎯 Goals
 - Master DSA fundamentals
 - Improve problem-solving skills
