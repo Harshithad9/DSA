@@ -69,24 +69,27 @@ for i in range(n):
 - (100 is constant → ignored)
 
 
-Example 4 (Dependent Loops)
+### Example 4 (Dependent Loops)
+```python
 for i in range(n):
     for j in range(i):
         print(i, j)
 
 
-Time Complexity: O(n²)
+- Time Complexity: O(n²)
 
-Example 5 (Triple Dependent Loops)
+### Example 5 (Triple Dependent Loops)
+```python
 for i in range(n):
     for j in range(i):
         for k in range(j):
             print(i, j, k)
 
 
-Time Complexity: O(n³)
+- Time Complexity: O(n³)
 
-🔹 What is Space Complexity?
+
+# 🔹 What is Space Complexity?
 
 Space Complexity measures extra memory used by the algorithm.
 
