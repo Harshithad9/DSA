@@ -118,6 +118,8 @@ The goal of this repository is to:
 - Common Binary Search mistakes
 - Practice: Search Insert Position, First & Last Occurrence
 
+---
+
 ### 🔜 Upcoming Topics
 - Day 10 – Binary Search Applications
 - Recursion (Core Concept)
