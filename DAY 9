@@ -1,0 +1,184 @@
+# 🟢 Day 9 – Binary Search
+
+## 🎯 Objective
+- Understand Binary Search
+- Learn iterative implementation
+- Learn recursive implementation
+- Understand O(log n)
+- Avoid common mistakes
+
+---
+
+# 🔹 What is Binary Search?
+
+Binary Search is an efficient searching algorithm that works on **sorted arrays**.
+
+Instead of checking every element, it repeatedly divides the search space in half.
+
+⚠️ Binary Search works only on sorted arrays.
+
+---
+
+# 🔹 Why Binary Search?
+
+For an array of size n:
+
+- Linear Search → O(n)
+- Binary Search → O(log n)
+
+Example:
+
+If n = 1,000,000  
+Binary Search takes about 20 steps.
+
+---
+
+# 🔹 Core Idea
+
+1. Find middle element
+2. If target == middle → return index
+3. If target < middle → search left half
+4. If target > middle → search right half
+5. Repeat until found or search space is empty
+
+Each step halves the search space.
+
+---
+
+# 🔹 Iterative Binary Search
+
+```python
+def binary_search(arr, target):
+    left = 0
+    right = len(arr) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+```
+
+Time Complexity: O(log n)  
+Space Complexity: O(1)
+
+---
+
+# 🔹 Recursive Binary Search
+
+```python
+def binary_search(arr, left, right, target):
+    if left > right:
+        return -1
+
+    mid = (left + right) // 2
+
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] < target:
+        return binary_search(arr, mid + 1, right, target)
+    else:
+        return binary_search(arr, left, mid - 1, target)
+```
+
+Time Complexity: O(log n)  
+Space Complexity: O(log n) (due to recursion stack)
+
+---
+
+# 🔹 Safe Mid Calculation
+
+In languages like Java/C++, this prevents overflow:
+
+```python
+mid = left + (right - left) // 2
+```
+
+---
+
+# 🔹 Understanding O(log n)
+
+If:
+
+```python
+while n > 1:
+    n = n // 2
+```
+
+Each step halves n.
+
+Example:
+
+16 → 8 → 4 → 2 → 1
+
+Number of steps = log₂(n)
+
+Therefore:
+Time Complexity = O(log n)
+
+---
+
+# 🔹 Logarithmic Growth Pattern
+
+If you see:
+
+- n = n / 2
+- i = i * 2
+- j *= 2
+
+Think immediately:
+O(log n)
+
+---
+
+# 🔹 Combined Complexity Example
+
+```python
+for i in range(n):
+    j = 1
+    while j < n:
+        j *= 2
+```
+
+Outer loop → O(n)  
+Inner loop → O(log n)
+
+Total → O(n log n)
+
+---
+
+# 🔹 Common Mistakes
+
+- Using Binary Search on unsorted array
+- Wrong loop condition (must use left <= right)
+- Infinite loop due to wrong mid update
+- Forgetting to return -1 if not found
+
+---
+
+# 🔹 Practice Problems
+
+- Binary Search (basic)
+- Search Insert Position
+- First Occurrence of element
+- Last Occurrence of element
+
+---
+
+# 🔥 Key Takeaways
+
+- Binary Search reduces search space by half
+- Time Complexity = O(log n)
+- Works only on sorted arrays
+- Recognize halving/doubling patterns
+- Multiply nested loops carefully
+
+---
+
+# 🚀 End of Day 9
