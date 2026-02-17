@@ -30,17 +30,23 @@ The goal of this repository is to:
 - Input & output
 - Arithmetic operations
 
+---
+
 ### 🟢 Day 2 – Conditional Statements
 - if / else / elif
 - Comparison operators
 - Logical operators
 - Problem-solving with conditions
 
+---
+
 ### 🟢 Day 3 – Loops
 - for loop
 - while loop
 - Nested loops
 - Factorial, sum of N numbers
+
+---
 
 ### 🟢 Day 4 – Functions
 - Function definition
@@ -100,8 +106,19 @@ The goal of this repository is to:
 
 ---
 
+### 🟢 Day 9 – Binary Search
+- Introduction to Binary Search
+- Requirement of sorted array
+- Iterative Binary Search implementation
+- Recursive Binary Search implementation
+- Understanding O(log n)
+- Halving and doubling growth patterns
+- Safe mid calculation technique
+- Time vs Space Complexity in recursion
+- Common Binary Search mistakes
+- Practice: Search Insert Position, First & Last Occurrence
+
 ### 🔜 Upcoming Topics
-- Day 9 – Searching & Binary Search
 - Day 10 – Binary Search Applications
 - Recursion (Core Concept)
 - Backtracking Basics
