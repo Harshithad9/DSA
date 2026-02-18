@@ -133,7 +133,6 @@ The goal of this repository is to:
 ---
 
 ### 🔜 Upcoming Topics
-- Day 10 – Binary Search Applications
 - Recursion (Core Concept)
 - Backtracking Basics
 - Linked List
