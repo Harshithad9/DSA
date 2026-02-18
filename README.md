@@ -120,6 +120,18 @@ The goal of this repository is to:
 
 ---
 
+### 🟢 Day 10 – Binary Search Applications
+- First occurrence of element in sorted array
+- Last occurrence of element
+- Handling duplicates using Binary Search
+- Search Insert Position problem
+- Lower Bound concept
+- Adjusting search space (left & right updates)
+- Understanding why complexity remains O(log n)
+- Recognizing Binary Search problem patterns
+
+---
+
 ### 🔜 Upcoming Topics
 - Day 10 – Binary Search Applications
 - Recursion (Core Concept)
