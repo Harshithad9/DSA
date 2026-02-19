@@ -132,8 +132,6 @@ The goal of this repository is to:
 
 ---
 
----
-
 ### 🟢 Day 11 – Recursion
 - Introduction to recursion
 - Understanding base case and recursive case
@@ -148,9 +146,7 @@ The goal of this repository is to:
 
 ---
 
-
 ### 🔜 Upcoming Topics
-- Recursion (Core Concept)
 - Backtracking Basics
 - Linked List
 - Stack & Queue
