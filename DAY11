@@ -1,0 +1,195 @@
+# 🟢 Day 11 – Recursion
+
+## 🎯 Objective
+- Understand recursion
+- Learn base case and recursive case
+- Visualize recursion stack
+- Understand recursion flow (downward & upward)
+- Analyze time and space complexity
+
+---
+
+# 🔹 What is Recursion?
+
+Recursion is when a function calls itself.
+
+It solves a problem by breaking it into smaller subproblems.
+
+Every recursive function must have:
+
+1. Base Case → stops recursion
+2. Recursive Case → calls itself
+
+Without a base case → infinite recursion.
+
+---
+
+# 🔹 Basic Example
+
+```python
+def print_numbers(n):
+    if n == 0:
+        return
+    print(n)
+    print_numbers(n-1)
+
+print_numbers(3)
+```
+
+Output:
+3
+2
+1
+```
+
+This is printing while going DOWN the recursion stack.
+
+---
+
+# 🔹 Recursion Stack Concept
+
+Each recursive call is stored in memory (stack).
+
+Example:
+
+print_numbers(3)
+→ print_numbers(2)
+→ print_numbers(1)
+→ print_numbers(0)
+
+After reaching base case, execution returns back step by step.
+
+---
+
+# 🔹 Printing While Coming Back (Post-order)
+
+```python
+def print_numbers(n):
+    if n == 0:
+        return
+    print_numbers(n-1)
+    print(n)
+
+print_numbers(3)
+```
+
+Output:
+1
+2
+3
+```
+
+Here printing happens while coming UP the stack.
+
+---
+
+# 🔹 Printing Before and After Recursion
+
+```python
+def print_pattern(n):
+    if n == 0:
+        return
+    print(n)
+    print_pattern(n-1)
+    print(n)
+
+print_pattern(2)
+```
+
+Output:
+2
+1
+1
+2
+```
+
+This creates a mirror pattern.
+
+---
+
+# 🔹 Recursion with Return Value (Sum of Numbers)
+
+```python
+def sum_numbers(n):
+    if n == 0:
+        return 0
+    return n + sum_numbers(n-1)
+
+print(sum_numbers(3))
+```
+
+Output:
+6
+```
+
+This computes:
+3 + 2 + 1 + 0
+
+---
+
+# 🔹 Factorial Using Recursion
+
+```python
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(5))
+```
+
+Time Complexity: O(n)  
+Space Complexity: O(n)
+
+---
+
+# 🔹 Important Recursion Rules
+
+- Always define a base case
+- Ensure recursive call moves toward base case
+- Understand stack flow
+- Code before recursion runs while going DOWN
+- Code after recursion runs while coming UP
+
+---
+
+# 🔹 Time Complexity in Recursion
+
+Example:
+
+```python
+def fun(n):
+    if n == 0:
+        return
+    fun(n-1)
+```
+
+Time Complexity: O(n)  
+Space Complexity: O(n)
+
+Because there are n recursive calls stored in stack.
+
+---
+
+# 🔹 Recognizing Recursion Patterns
+
+- Factorial
+- Sum of numbers
+- Print numbers
+- Reverse string
+- Tree traversal
+- Backtracking
+
+---
+
+# 🔥 Key Takeaways
+
+- Recursion breaks problems into smaller versions
+- Stack memory stores function calls
+- Base case prevents infinite recursion
+- Understand flow before writing code
+- Analyze time and space complexity carefully
+
+---
+
+# 🚀 End of Day 11
