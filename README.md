@@ -132,6 +132,23 @@ The goal of this repository is to:
 
 ---
 
+---
+
+### 🟢 Day 11 – Recursion
+- Introduction to recursion
+- Understanding base case and recursive case
+- Recursion stack concept
+- Printing while going down (pre-order style)
+- Printing while coming up (post-order style)
+- Printing before and after recursion (mirror pattern)
+- Recursion with return values (sum of numbers)
+- Factorial using recursion
+- Time and Space Complexity in recursion (O(n))
+- Understanding recursion flow and stack memory
+
+---
+
+
 ### 🔜 Upcoming Topics
 - Recursion (Core Concept)
 - Backtracking Basics
