@@ -1,0 +1,185 @@
+# 🟢 Day 13 – Linked List (Fundamentals)
+
+## 🎯 Objective
+- Understand Linked List structure
+- Learn Node creation
+- Create a Linked List
+- Traverse a Linked List
+- Insert at beginning and end
+- Delete a node
+- Compare Linked List with Array
+
+---
+
+# 🔹 What is a Linked List?
+
+A Linked List is a linear data structure made up of nodes.
+
+Each node contains:
+- Data
+- Pointer (next)
+
+Structure:
+
+[data | next] → [data | next] → ... → None
+
+Memory is not contiguous like arrays.
+
+---
+
+# 🔹 Node Class (Python)
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+```
+
+---
+
+# 🔹 Creating a Linked List
+
+```python
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+
+node1.next = node2
+node2.next = node3
+```
+
+Structure:
+10 → 20 → 30 → None
+
+---
+
+# 🔹 Traversing a Linked List
+
+```python
+def traverse(head):
+    current = head
+    while current:
+        print(current.data)
+        current = current.next
+```
+
+Time Complexity: O(n)
+
+---
+
+# 🔹 Insert at Beginning
+
+```python
+def insert_at_beginning(head, data):
+    new_node = Node(data)
+    new_node.next = head
+    return new_node
+```
+
+Example:
+10 → 20 → 30
+
+Insert 5 at beginning:
+
+5 → 10 → 20 → 30 → None
+
+Time Complexity: O(1)
+
+---
+
+# 🔹 Insert at End
+
+```python
+def insert_at_end(head, data):
+    new_node = Node(data)
+
+    if not head:
+        return new_node
+
+    current = head
+    while current.next:
+        current = current.next
+
+    current.next = new_node
+    return head
+```
+
+Example:
+10 → 20 → 30
+
+Insert 40 at end:
+
+10 → 20 → 30 → 40 → None
+
+Time Complexity: O(n)
+
+---
+
+# 🔹 Delete a Node (By Value)
+
+```python
+def delete_node(head, key):
+    current = head
+    prev = None
+
+    while current and current.data != key:
+        prev = current
+        current = current.next
+
+    if not current:
+        return head
+
+    if not prev:
+        return current.next
+
+    prev.next = current.next
+    return head
+```
+
+Example:
+10 → 20 → 30
+
+Delete 20:
+
+10 → 30 → None
+
+Time Complexity: O(n)
+
+---
+
+# 🔹 Array vs Linked List
+
+| Operation | Array | Linked List |
+|------------|--------|-------------|
+| Access by index | O(1) | O(n) |
+| Insert at beginning | O(n) | O(1) |
+| Insert at end | O(1)* | O(n) |
+| Delete | O(n) | O(n) |
+
+*Dynamic array resize may cost O(n)
+
+---
+
+# 🔹 Important Concepts
+
+- Head pointer
+- Node structure
+- Traversal
+- Pointer redirection
+- Null termination
+
+---
+
+# 🔥 Key Takeaways
+
+- Linked List stores elements dynamically
+- Each node stores data and pointer
+- Insert at beginning is O(1)
+- Traversal is O(n)
+- Deletion requires pointer adjustment
+- Think in terms of pointer manipulation
+
+---
+
+# 🚀 End of Day 13
