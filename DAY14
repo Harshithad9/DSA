@@ -1,0 +1,175 @@
+# 🟢 Day 14 – Stack
+
+## 🎯 Objective
+- Understand Stack data structure
+- Learn LIFO principle
+- Implement Stack using Python list
+- Perform push, pop, peek operations
+- Solve Valid Parentheses problem
+
+---
+
+# 🔹 What is a Stack?
+
+A Stack is a linear data structure that follows:
+
+LIFO → Last In, First Out
+
+Example:
+Push 10  
+Push 20  
+Push 30  
+
+Stack becomes:
+
+Top → 30  
+        20  
+        10  
+
+Pop removes 30 first.
+
+---
+
+# 🔹 Stack Operations
+
+| Operation | Description |
+|------------|-------------|
+| Push | Add element to top |
+| Pop | Remove top element |
+| Peek | View top element |
+| isEmpty | Check if stack is empty |
+
+---
+
+# 🔹 Stack Implementation Using Python List
+
+Python list already behaves like a stack.
+
+---
+
+## Push
+
+```python
+stack = []
+stack.append(10)
+stack.append(20)
+stack.append(30)
+```
+
+---
+
+## Pop
+
+```python
+stack.pop()
+```
+
+Removes last element.
+
+---
+
+## Peek
+
+```python
+stack[-1]
+```
+
+---
+
+## Check if Empty
+
+```python
+len(stack) == 0
+```
+
+---
+
+# 🔹 Time Complexity
+
+Push → O(1)  
+Pop → O(1)  
+Peek → O(1)  
+
+Stack operations are very efficient.
+
+---
+
+# 🔹 Example
+
+```python
+stack = []
+stack.append(5)
+stack.append(10)
+stack.pop()
+stack.append(20)
+
+print(stack)
+```
+
+Output:
+[5, 20]
+
+---
+
+# 🔹 Real Interview Problem – Valid Parentheses
+
+Given a string:
+"()[]{}"
+
+Check if parentheses are valid.
+
+---
+
+## Approach
+
+- If opening bracket → push to stack
+- If closing bracket → pop and check match
+- If mismatch → return False
+- If stack empty at end → valid
+
+---
+
+## Code
+
+```python
+def is_valid(s):
+    stack = []
+    mapping = {')': '(', '}': '{', ']': '['}
+
+    for ch in s:
+        if ch in mapping.values():
+            stack.append(ch)
+        elif ch in mapping:
+            if not stack or stack.pop() != mapping[ch]:
+                return False
+
+    return len(stack) == 0
+```
+
+Time Complexity: O(n)  
+Space Complexity: O(n)
+
+---
+
+# 🔹 Why Stack is Useful?
+
+Used in:
+- Parentheses problems
+- Expression evaluation
+- Undo/Redo operations
+- Recursion (call stack)
+- Depth First Search (DFS)
+
+---
+
+# 🔥 Key Takeaways
+
+- Stack follows LIFO principle
+- Implemented easily using Python list
+- Push and Pop are O(1)
+- Useful in many interview problems
+- Understand top element behavior
+
+---
+
+# 🚀 End of Day 14
