@@ -184,8 +184,6 @@ The goal of this repository is to:
 ---
 
 ### 🔜 Upcoming Topics
-- Backtracking Basics
-- Linked List
 - Stack & Queue
 - Trees & Binary Search Trees
 - Graphs
