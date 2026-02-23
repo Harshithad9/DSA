@@ -146,6 +146,43 @@ The goal of this repository is to:
 
 ---
 
+---
+
+### 🟢 Day 12 – Backtracking
+- Introduction to backtracking
+- Difference between recursion and backtracking
+- Backtracking template (Make → Explore → Undo)
+- Generating all subsets (2^n complexity)
+- Generating all permutations (n! complexity)
+- Understanding recursion decision tree
+- Exponential time complexity concepts
+
+---
+
+### 🟢 Day 13 – Linked List
+- Introduction to Linked List
+- Node structure (data + next pointer)
+- Creating a linked list manually
+- Traversing a linked list
+- Insert at beginning (O(1))
+- Insert at end (O(n))
+- Delete a node by value
+- Pointer manipulation concepts
+- Array vs Linked List comparison
+
+---
+
+### 🟢 Day 14 – Stack
+- Introduction to Stack (LIFO principle)
+- Stack operations (Push, Pop, Peek, isEmpty)
+- Implementing stack using Python list
+- Time complexity of stack operations (O(1))
+- Valid Parentheses problem using stack
+- Understanding stack behavior with examples
+- Real-world stack use cases
+
+---
+
 ### 🔜 Upcoming Topics
 - Backtracking Basics
 - Linked List
