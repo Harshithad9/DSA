@@ -1,0 +1,154 @@
+# 🟢 Day 15 – Queue
+
+## 🎯 Objective
+- Understand Queue data structure
+- Learn FIFO principle
+- Implement Queue using list and deque
+- Understand time complexity
+- Solve queue-based problems
+
+---
+
+# 🔹 What is a Queue?
+
+A Queue is a linear data structure that follows:
+
+FIFO → First In, First Out
+
+Example:
+If we insert 10, 20, 30
+
+Queue becomes:
+Front → 10 → 20 → 30 → Rear
+
+The first element inserted (10) will be removed first.
+
+---
+
+# 🔹 Queue Operations
+
+| Operation | Description |
+|------------|-------------|
+| Enqueue | Add element at rear |
+| Dequeue | Remove element from front |
+| Peek | View front element |
+| isEmpty | Check if queue is empty |
+
+---
+
+# 🔹 Queue Using Python List (Basic Implementation)
+
+```python
+queue = []
+
+# Enqueue
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+# Dequeue
+queue.pop(0)
+```
+
+⚠️ Problem:
+`pop(0)` is O(n) because elements shift left.
+
+---
+
+# 🔹 Efficient Queue Using deque
+
+```python
+from collections import deque
+
+queue = deque()
+
+# Enqueue
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+# Dequeue
+queue.popleft()
+```
+
+Now both operations are efficient.
+
+---
+
+# 🔹 Time Complexity
+
+Using List:
+
+Enqueue → O(1)  
+Dequeue → O(n)
+
+Using deque:
+
+Enqueue → O(1)  
+Dequeue → O(1)
+
+---
+
+# 🔹 Example
+
+```python
+from collections import deque
+
+q = deque()
+q.append(1)
+q.append(2)
+q.append(3)
+q.popleft()
+q.append(4)
+
+print(q)
+```
+
+Output:
+deque([2, 3, 4])
+
+---
+
+# 🔹 Stack vs Queue
+
+| Stack | Queue |
+|--------|--------|
+| LIFO | FIFO |
+| append() / pop() | append() / popleft() |
+| Last element removed first | First element removed first |
+
+---
+
+# 🔹 Real Interview Problem
+
+Implement Queue using Stacks.
+
+Idea:
+- Use two stacks
+- One for input
+- One for output
+- Transfer elements when needed
+
+---
+
+# 🔹 Applications of Queue
+
+- CPU scheduling
+- Breadth First Search (BFS)
+- Task scheduling
+- Buffer handling
+- Print queue system
+
+---
+
+# 🔥 Key Takeaways
+
+- Queue follows FIFO principle
+- deque is preferred in Python
+- Avoid using pop(0) for performance
+- Queue is important for BFS and scheduling problems
+- Understand front and rear concept
+
+---
+
+# 🚀 End of Day 15
