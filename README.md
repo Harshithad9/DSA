@@ -56,7 +56,7 @@ The goal of this repository is to:
 
 ---
 
-### 🟢 Day 5 – Lists (Arrays in Python)
+### 🟢 Day 5 – Lists
 - Introduction to arrays
 - Python lists
 - Traversing arrays
