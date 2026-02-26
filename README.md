@@ -184,7 +184,6 @@ The goal of this repository is to:
 ---
 
 ### 🔜 Upcoming Topics
-- Stack & Queue
 - Trees & Binary Search Trees
 - Graphs
 - Dynamic Programming
