@@ -1,0 +1,172 @@
+# 🟢 Day 17 – Linked List Cycle Detection (Floyd’s Algorithm)
+
+## 🎯 Objective
+- Detect if a linked list contains a cycle
+- Learn Floyd’s Cycle Detection Algorithm (Tortoise & Hare)
+- Find the starting node of the cycle
+- Understand mathematical intuition
+- Analyze time and space complexity
+
+---
+
+# 🔹 Problem 1 – Detect Cycle in Linked List
+
+Given a linked list, determine if it contains a cycle.
+
+Example:
+
+1 → 2 → 3 → 4 → 5  
+          ↑     ↓  
+          ← ← ← ←  
+
+---
+
+# 🔹 Brute Force Approach
+
+Store visited nodes in a set.
+
+If a node appears again → cycle exists.
+
+Time Complexity: O(n)  
+Space Complexity: O(n)
+
+Not optimal.
+
+---
+
+# 🔹 Optimal Approach – Floyd’s Cycle Detection Algorithm
+
+Also called:
+
+Tortoise and Hare Algorithm
+
+## Idea
+
+- Use two pointers:
+  - slow → moves 1 step
+  - fast → moves 2 steps
+- If there is a cycle → they will meet
+- If no cycle → fast reaches None
+
+---
+
+# 🔹 Code – Detect Cycle
+
+```python
+def has_cycle(head):
+    slow = head
+    fast = head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:
+            return True
+
+    return False
+```
+
+---
+
+# 🔹 Why Does This Work?
+
+Inside a cycle:
+
+- Fast moves 2 steps
+- Slow moves 1 step
+- Relative speed = 1
+
+Fast eventually catches slow.
+
+Like two runners on a circular track.
+
+---
+
+# 🔹 Time & Space Complexity
+
+Time Complexity: O(n)  
+Space Complexity: O(1)
+
+---
+
+# 🔹 Problem 2 – Find Start of Cycle
+
+After detecting a cycle, find the exact node where the cycle begins.
+
+---
+
+# 🔹 Algorithm (Phase 2)
+
+1. Detect meeting point inside cycle.
+2. Move one pointer back to head.
+3. Move both pointers one step at a time.
+4. Where they meet again = start of cycle.
+
+---
+
+# 🔹 Code – Find Cycle Start
+
+```python
+def detect_cycle_start(head):
+    slow = head
+    fast = head
+
+    # Phase 1: Detect cycle
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:
+            break
+    else:
+        return None
+
+    # Phase 2: Find start of cycle
+    fast = head
+
+    while slow != fast:
+        slow = slow.next
+        fast = fast.next
+
+    return slow
+```
+
+---
+
+# 🔹 Why Phase 2 Works (Intuition)
+
+Let:
+
+L = distance from head to cycle start  
+C = cycle length  
+
+Mathematically:
+
+Distance from meeting point to cycle start  
+= Distance from head to cycle start  
+
+So moving both pointers at same speed makes them meet at cycle start.
+
+---
+
+# 🔹 Important Observations
+
+- First meeting point is NOT necessarily cycle start.
+- Second meeting point (after reset) is always cycle start.
+- No extra memory required.
+- Very common interview question.
+
+---
+
+# 🔥 Key Takeaways
+
+- Use slow and fast pointers
+- Detect cycle in O(n) time
+- Find cycle start elegantly
+- Understand two-phase logic
+- Strong pointer manipulation concept
+
+---
+
+# 🚀 End of Day 17
