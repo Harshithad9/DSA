@@ -183,6 +183,40 @@ The goal of this repository is to:
 
 ---
 
+---
+
+### 🟢 Day 15 – Queue (FIFO Data Structure)
+- FIFO (First In, First Out) concept
+- Enqueue & Dequeue operations
+- Implementation using list vs deque
+- Time Complexity comparison
+- Valid use cases (BFS, scheduling)
+- Implement Queue using Stacks (Interview pattern)
+
+---
+
+---
+
+### 🟢 Day 16 – Reverse Linked List
+- Iterative reverse using three pointers
+- Recursive reverse approach
+- Time complexity O(n)
+- Space complexity O(1) iterative
+- Reverse linked list twice restores original
+- Edge cases handling
+
+---
+
+### 🟢 Day 17 – Linked List Advanced Concepts
+- Reverse Linked List II (partial reversal between m and n)
+- Dummy node usage
+- Pointer reconnection logic
+- Floyd’s Cycle Detection Algorithm
+- Detect cycle in O(n) time and O(1) space
+- Find start of cycle (two-phase approach)
+
+---
+
 ### 🔜 Upcoming Topics
 - Trees & Binary Search Trees
 - Graphs
