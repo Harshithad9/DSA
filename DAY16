@@ -1,0 +1,146 @@
+# 🟢 Day 16 – Reverse Linked List (Very Important Interview Problem)
+
+## 🎯 Objective
+- Reverse a singly linked list
+- Master pointer manipulation
+- Understand iterative and recursive approaches
+- Analyze time and space complexity
+- Handle edge cases confidently
+
+---
+
+# 🔹 Problem Statement
+
+Given a linked list:
+
+10 → 20 → 30 → None
+
+Reverse it to:
+
+30 → 20 → 10 → None
+
+---
+
+# 🔹 Key Idea
+
+We reverse the direction of the `next` pointers.
+
+Instead of:
+
+A → B → C
+
+We make:
+
+A ← B ← C
+
+---
+
+# 🔹 Three Pointer Technique
+
+We use:
+
+- prev
+- current
+- next_node
+
+---
+
+# 🔹 Iterative Solution (Preferred in Interviews)
+
+```python
+def reverse_linked_list(head):
+    prev = None
+    current = head
+
+    while current:
+        next_node = current.next      # Save next node
+        current.next = prev           # Reverse pointer
+        prev = current                # Move prev forward
+        current = next_node           # Move current forward
+
+    return prev
+```
+
+---
+
+# 🔹 Step-by-Step Example
+
+Original list:
+
+1 → 2 → 3 → 4 → None
+
+After reversing:
+
+4 → 3 → 2 → 1 → None
+
+The last node becomes the new head.
+
+---
+
+# 🔹 Important Observations
+
+- Old head becomes the last node.
+- Last node becomes the new head.
+- Reversing twice restores the original list.
+
+reverse(reverse(head)) = original list
+
+---
+
+# 🔹 Time Complexity
+
+O(n)
+
+Each node is visited exactly once.
+
+---
+
+# 🔹 Space Complexity
+
+O(1)
+
+Only three pointers are used.
+
+---
+
+# 🔹 Recursive Version (For Understanding)
+
+```python
+def reverse_recursive(head):
+    if not head or not head.next:
+        return head
+
+    new_head = reverse_recursive(head.next)
+    head.next.next = head
+    head.next = None
+
+    return new_head
+```
+
+Time Complexity: O(n)  
+Space Complexity: O(n) (due to recursion stack)
+
+---
+
+# 🔹 Iterative vs Recursive
+
+| Method | Time | Space |
+|--------|------|-------|
+| Iterative | O(n) | O(1) |
+| Recursive | O(n) | O(n) |
+
+Iterative is preferred in interviews.
+
+---
+
+# 🔥 Key Takeaways
+
+- Use three-pointer technique
+- Think in terms of pointer reversal
+- Understand head changes
+- Handle edge cases (empty list, single node)
+- Very common interview question
+
+---
+
+# 🚀 End of Day 16
