@@ -146,8 +146,6 @@ The goal of this repository is to:
 
 ---
 
----
-
 ### 🟢 Day 12 – Backtracking
 - Introduction to backtracking
 - Difference between recursion and backtracking
@@ -183,8 +181,6 @@ The goal of this repository is to:
 
 ---
 
----
-
 ### 🟢 Day 15 – Queue (FIFO Data Structure)
 - FIFO (First In, First Out) concept
 - Enqueue & Dequeue operations
@@ -192,8 +188,6 @@ The goal of this repository is to:
 - Time Complexity comparison
 - Valid use cases (BFS, scheduling)
 - Implement Queue using Stacks (Interview pattern)
-
----
 
 ---
 
