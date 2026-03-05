@@ -12,9 +12,6 @@
 # 🔹 Problem 1 – Detect Cycle in Linked List
 
 Given a linked list, determine if it contains a cycle.
-
-
-
 Example:
 
 1 → 2 → 3 → 4 → 5  
