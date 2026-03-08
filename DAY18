@@ -1,0 +1,186 @@
+# 🟢 Day 18 – Binary Tree Basics
+
+## 🎯 Objective
+- Understand Tree data structure
+- Learn Binary Tree structure
+- Implement Tree Node in Python
+- Understand Tree terminology
+- Learn tree traversals (Inorder, Preorder, Postorder)
+
+---
+
+# 🔹 What is a Tree?
+
+A Tree is a hierarchical data structure consisting of nodes connected by edges.
+
+Example:
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+
+---
+
+# 🔹 Tree Terminology
+
+| Term | Description |
+|-----|-------------|
+| Root | Top node of the tree |
+| Parent | Node that has children |
+| Child | Node connected below another node |
+| Leaf | Node with no children |
+| Edge | Connection between nodes |
+| Height | Longest path from root to leaf |
+
+---
+
+# 🔹 Binary Tree
+
+A Binary Tree is a tree where each node has at most **two children**.
+
+- Left child
+- Right child
+
+Structure:
+
+[data | left | right]
+
+---
+
+# 🔹 Node Implementation (Python)
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+```
+
+---
+
+# 🔹 Creating a Binary Tree
+
+```python
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+```
+
+Tree becomes:
+
+        1
+       / \
+      2   3
+     / \
+    4   5
+
+---
+
+# 🔹 Tree Traversals
+
+Tree traversal means visiting every node in a specific order.
+
+There are three main types:
+
+- Inorder
+- Preorder
+- Postorder
+
+---
+
+# 🔹 Inorder Traversal
+
+Order:
+
+Left → Root → Right
+
+```python
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.data)
+        inorder(root.right)
+```
+
+Example output:
+
+4 2 5 1 3
+
+---
+
+# 🔹 Preorder Traversal
+
+Order:
+
+Root → Left → Right
+
+```python
+def preorder(root):
+    if root:
+        print(root.data)
+        preorder(root.left)
+        preorder(root.right)
+```
+
+Example output:
+
+1 2 4 5 3
+
+---
+
+# 🔹 Postorder Traversal
+
+Order:
+
+Left → Right → Root
+
+```python
+def postorder(root):
+    if root:
+        postorder(root.left)
+        postorder(root.right)
+        print(root.data)
+```
+
+Example output:
+
+4 5 2 3 1
+
+---
+
+# 🔹 Time Complexity
+
+For all traversals:
+
+O(n)
+
+Because each node is visited exactly once.
+
+---
+
+# 🔹 Applications of Trees
+
+- File systems
+- Databases
+- Expression evaluation
+- Hierarchical data representation
+- Searching algorithms
+
+---
+
+# 🔥 Key Takeaways
+
+- Trees represent hierarchical data
+- Binary Tree nodes have two children (left and right)
+- Traversals are fundamental tree operations
+- Recursive approach is commonly used
+- Each traversal visits every node once
+
+---
+
+# 🚀 End of Day 18
