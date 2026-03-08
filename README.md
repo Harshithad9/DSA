@@ -211,13 +211,6 @@ The goal of this repository is to:
 
 ---
 
-### 🔜 Upcoming Topics
-- Trees & Binary Search Trees
-- Graphs
-- Dynamic Programming
-
----
-
 ### 🟢 Day 18 – Binary Tree Basics
 - Introduction to Trees and hierarchical data structure
 - Binary Tree structure (left and right child)
@@ -229,6 +222,13 @@ The goal of this repository is to:
   - Preorder (Root → Left → Right)
   - Postorder (Left → Right → Root)
 - Time complexity of traversals (O(n))
+
+---
+
+### 🔜 Upcoming Topics
+- Trees & Binary Search Trees
+- Graphs
+- Dynamic Programming
 
 ---
 
