@@ -218,6 +218,20 @@ The goal of this repository is to:
 
 ---
 
+### 🟢 Day 18 – Binary Tree Basics
+- Introduction to Trees and hierarchical data structure
+- Binary Tree structure (left and right child)
+- Tree terminology (root, parent, child, leaf, height)
+- Implementing a tree node in Python
+- Creating a simple binary tree
+- Tree traversals:
+  - Inorder (Left → Root → Right)
+  - Preorder (Root → Left → Right)
+  - Postorder (Left → Right → Root)
+- Time complexity of traversals (O(n))
+
+---
+
 ## 🎯 Goals
 - Master DSA fundamentals
 - Improve problem-solving skills
